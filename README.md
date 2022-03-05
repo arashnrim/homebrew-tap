@@ -10,7 +10,7 @@ The table below shows the projects available in this repository:
 
 |           Project           | Install command                 |
 | :-------------------------: | :------------------------------ |
-| [tp](https://github.com/tp) | `brew install arashnrim/tap/tp` |
+| [tp](https://github.com/arashnrim/tp) | `brew install arashnrim/tap/tp` |
 
 ## Licence
 
