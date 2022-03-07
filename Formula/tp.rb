@@ -5,21 +5,21 @@
 class Tp < Formula
   desc "⚡️ Teleport to your projects and run commands in an instant."
   homepage "https://github.com/arashnrim/tp"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/arashnrim/tp/releases/download/v0.1.0/tp_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "d8fb21aafb94c2c5a7902da962f1c7d922bc9845b023f5f3821b2f114c8e844f"
+    if Hardware::CPU.arm?
+      url "https://github.com/arashnrim/tp/releases/download/v0.1.1/tp_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "bdbe3375e0ee780c0d5909965ef40a29a6a12989763d50d3affc2a32069330fa"
 
       def install
         bin.install "tp"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/arashnrim/tp/releases/download/v0.1.0/tp_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "df31a31700e2644a3d82b586a0ae99ca66e2fa9dbc324ac87b1b00eaeb4c061a"
+    if Hardware::CPU.intel?
+      url "https://github.com/arashnrim/tp/releases/download/v0.1.1/tp_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "125d407894958e08fbe2944bc5b1302512005f4bd49ff7f4c8e9cf1d47a81388"
 
       def install
         bin.install "tp"
@@ -29,16 +29,16 @@ class Tp < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arashnrim/tp/releases/download/v0.1.0/tp_0.1.0_Linux_arm64.tar.gz"
-      sha256 "38bba209800bad2227209b6cd8d9f7cec5dea2a1abc2f26d118b44d641bf3e4f"
+      url "https://github.com/arashnrim/tp/releases/download/v0.1.1/tp_0.1.1_Linux_arm64.tar.gz"
+      sha256 "561b103eb01528f9827b60b665f0fc66100f590d4a42e8ed0e99656737dcb8fd"
 
       def install
         bin.install "tp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/arashnrim/tp/releases/download/v0.1.0/tp_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "a990cc0164d2674bb9394d9159f5756be07535e43173c131402ddbf5dcce9d59"
+      url "https://github.com/arashnrim/tp/releases/download/v0.1.1/tp_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "ce484d3fdd47cb5f56ef129d98de1cc18182354ad228203772da0aa43b23313d"
 
       def install
         bin.install "tp"
